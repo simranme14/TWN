@@ -1,0 +1,233 @@
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer {
+  background-color: #000;
+  color: #bbb;
+  line-height: 1.5;
+  justify-content: space-between;
+}
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer__logoImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 70px;
+  padding: 14px 16px;
+  background-color: black;
+}
+
+.fsubtitle {
+  color: white;
+}
+a img {
+  width: 34px;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__logoSubtitle {
+  padding: 14px 0px 0px 0px;
+}
+.footer__title {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container {
+  flex: 1;
+}
+
+.footer__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__mainItems {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footer__formEmail {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+  margin-right: 5px;
+  width: auto;
+  margin-left: 10px;
+}
+.footer__subscribe {
+  background-color: #191970;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  margin-top: 0.3125rem;
+  margin-right: 5px;
+  width: auto;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1125px) {
+  .footer .footer__main,
+  .footer__main .footer__mainItems {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .footer__main,
+  .footer__main .footer__mainItems {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 205px) {
+  .footer__main,
+  .footer__main .footer__mainItems,
+  .footer__mainItems .footer__title {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    width: auto;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 205px) {
+  .footer__mainItems .footer__subtitle,
+  .footer__mainItems .footer__logoSubtitle {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    white-space: normal;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__mainItems .footer__form .footer__formEmail {
+    width: 80%;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer__mainItems .footer__logo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer__mainItems .footer__logoSubtitle {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer__mainItems .footer__logoImage {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__mainItems .footer__form .footer__subscribe {
+    width: auto;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+}
+.footer__social {
+  justify-content: center;
+}
+.footer__socialList {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+}
+.footer__socialList li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.footer__legal {
+  background-color: #333;
+  justify-content: center;
+  white-space: nowrap;
+}
+.footer__legalList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footer__legalList li {
+  margin: 0.125rem 0.625rem;
+}
+.footer__legalList li:nth-last-child(2) {
+  flex: 1;
+}
+
+@media screen and (max-width: 670px) {
+  .footer__legal,
+  .footer__legal .footer__legalList {
+    -ms-flex: 100%;
+    flex: 100%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .footer__legal,
+  .footer__legal .footer__legalList {
+    -ms-flex: 100%;
+    flex: 100%;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 0px;
+    white-space: normal;
+  }
+}

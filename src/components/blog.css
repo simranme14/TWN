@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  background: #f1f1f1;
+}
+
+.blog {
+  margin-bottom: 20px;
+}
+
+.blog__headerImg {
+  width: 100%;
+  height: 300px;
+  opacity: 50%;
+
+  object-fit: cover;
+}
+
+.blog__header {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.blog__headerContent {
+  position: absolute;
+  left: 16px;
+  top: 30%;
+}
+
+.blog__section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.blog__leftSection {
+  float: left;
+  width: 60%;
+}
+
+.blog_img {
+  width: 100%;
+  padding: 20px;
+}
+
+.blog__weekSection {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.blog__rightSection {
+  float: left;
+  width: 40%;
+  padding-left: 20px;
+}
+.blog__newsSection {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.blog__recentNews {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .blog__leftSection,
+  .blog__rightSection {
+    width: 100%;
+    padding: 0;
+  }
+}
